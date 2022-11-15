@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num" >
+    <input type="button" value="addElement" onclick="addele()"><br><br>
+    <input type="button" value="Display Array" id="dis" onclick="Display()"><br>
+    
+
+    <p>Operations:</p>
+    <input type="button" value="pop" onclick="Popele()"><br><br>
+    <input type="button" value="isInclude" onclick="isIncludes()">
+
+    <input type="number" id="incl">
+    <script>
+        const arr = new Array();
+        function addele(){
+            let num = parseInt(document.getElementById("num").value);
+            arr.push(num);
+            console.log(arr)
+        }
+        function Display(){
+            window.alert(arr);
+        }
+        function Popele(){
+            let ele = arr.pop();
+            alert("Remove : ",ele);
+        }
+        function isIncludes(){
+            let x = parseInt(document.getElementById("incl").value);
+            if(arr.includes(x)){
+                alert("Array has value")
+            }else{
+            alert("Doesnt Include");
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Practicals
+
+    </title>
+</head>
+<body>
+    <h1>Area of Circle</h1>
+    <input type="number" id="radius" placeholder="Enter Radius"/>
+    <input type="button" value="Calc Area" onclick="calculate()"/>
+
+    <h1>Area of Rectangle</h1>
+    <input type="number" id="l" placeholder="Enter Radius"/>
+    <input type="number" id="b" placeholder="Enter Radius"/>
+    <input type="button" value="Calc Area" onclick="calculateRect()"/>
+    <script>
+        function calculate(){
+            let radius=document.getElementById("radius").value;
+            let ans=Math.PI*radius*radius;
+            // document.write(ans);
+            window.alert("The Area  " +(ans));
+        }
+        function calculateRect(){
+            var l=document.getElementById("l").value;
+            var b=document.getElementById("l").value;
+            let ans=l*b
+            // document.write(ans);
+            window.alert("The Area  " +(ans));
+        }
+    </script>
+</body>
+</html>

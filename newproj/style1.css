@@ -1,0 +1,34 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    background-color: aqua;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+.bodu{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+li{
+    display: inline;
+    color: black;
+    margin-left: 5px;
+}
+li:hover{
+    color: yellow;
+}
+.card{    
+    width: 20rem;
+    height: 17rem;
+    background-color: beige;
+    margin: 1rem;
+    
+
+}

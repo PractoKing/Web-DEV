@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="str1" >
+    <input type="text" id="str2"><br>
+    <input type="button" value="LocaleCompare()" onclick="Localecomp()"><br>
+    <input type="button" value="Strict Compare" onclick="Strict()">
+    <script>
+        let str1 = document.getElementById("str1").value;
+        let str2 = document.getElementById("str2").value;
+        function Localecomp(){
+            if(str1.localeCompare(str2)==0){
+                window.alert("Are Equal")
+            }else{
+                window.alert("NOt equal")
+            }
+        }
+        function Strict(){
+            if(str1==str2){
+                window.alert("Strings are exactly equal");
+            }else{
+                window.alert("Not equal");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical2</title>
+</head>
+<body>
+    <input id ="rev" type="text" placeholder="Enter String">
+    <br>
+    <p></p>
+    <input type="button" value="reverseString" onclick="reverseString()">
+    <input type="button" value="Is Palindrome" onclick="isPlindrome()">
+    <script>
+        function reverseString(){
+            let str = document.getElementById("rev").value;
+            window.alert( str.split('').reverse().join(''));
+        }
+
+        function isPlindrome(){
+            let chararray = document.getElementById("rev").value.split('');
+            for (let i = 0; i < chararray.length; i++) {
+                if(chararray[i] !== chararray[chararray.length-1-i]){
+                    return window.alert("NOt Plaindrome")
+                  
+                }
+                
+            }
+            window.alert("IS palindrome")
+        }
+    </script>
+</body>
+</html>
